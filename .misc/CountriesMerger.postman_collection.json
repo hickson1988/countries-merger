@@ -1,0 +1,108 @@
+{
+	"info": {
+		"_postman_id": "17665ca9-6007-4b9e-850b-65f6de063735",
+		"name": "CountriesMerger",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Countries",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJPY0JsVnZ1dVJ4d01NVlpFMjA1S2FCSzMxSlBtV0oyU2NwYVVVUHZYZGJFIn0.eyJleHAiOjE2MDMxNzk4NzUsImlhdCI6MTYwMzE3OTI3NSwianRpIjoiM2YwMWRhY2ItMGM0NC00NzE1LTk4M2EtYjM1YTc0YjQ1NTlkIiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4MTgwL2F1dGgvcmVhbG1zL3F1YXJrdXMiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiYWJjODJjZDgtZjgwNy00ZDYxLWFiOGEtZGNjZWQ1ZjUyMmNjIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoiY291bnRyaWVzLXNlcnZpY2UiLCJzZXNzaW9uX3N0YXRlIjoiMmMyZTdkNGItNjNmYS00ZDIxLWFmYmQtNDc5NGVjNTIxNTkzIiwiYWNyIjoiMSIsImFsbG93ZWQtb3JpZ2lucyI6WyJodHRwOi8vbG9jYWxob3N0OjgxODAiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbInVzZXJfcm9sZSIsIm9mZmxpbmVfYWNjZXNzIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6Im9wZW5pZCBwcm9maWxlIGVtYWlsIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJ0ZXN0In0.far9UphHWDEy-T6M_ZrDHolNYQ-aJg_lpZ63h2sfQ-hm7MkT5FJ21aXFzN8uCxaOq29Wvo95Lw8D5NwbHObeXtpOXuHlMqt-kj2z2wxHn5FIcJ7GdHIqwwv9OrrmheS37YEpmNxzdtePv8Ro2_LYdxU5z9FCel5LgDvaSS_s6MJ2EK9u3xb0aLlW7u4oEFvdU5gQMbYmi-1fqwxkC1gMaNpsUUUB3vf9iNIaR1-Q0RapRgth484LWo0BQ85-vo366E5D2FOapC-QJ8XgHphHQYuuTgfVto5JZHAWpgI6Ac-tTQM_dqOS786g-g9cfgrV6zbIf9zRL4bBKmD2If_F6g",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/countries",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"countries"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Keycloak",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJPY0JsVnZ1dVJ4d01NVlpFMjA1S2FCSzMxSlBtV0oyU2NwYVVVUHZYZGJFIn0.eyJleHAiOjE2MDMxNzY2MTgsImlhdCI6MTYwMzE3NjAxOCwianRpIjoiMjA0N2IxMDMtNDFlYS00MjMwLWFiZGUtOGJjNjIzYzQ1NjM4IiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4MTgwL2F1dGgvcmVhbG1zL3F1YXJrdXMiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiYWJjODJjZDgtZjgwNy00ZDYxLWFiOGEtZGNjZWQ1ZjUyMmNjIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoiY291bnRyaWVzLXNlcnZpY2UiLCJzZXNzaW9uX3N0YXRlIjoiMGYxMTMzYWEtNjA1MC00ZDJjLTk1ZmUtZTA2N2EwMmU1Njc2IiwiYWNyIjoiMSIsImFsbG93ZWQtb3JpZ2lucyI6WyJodHRwOi8vbG9jYWxob3N0OjgxODAiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbInVzZXJfcm9sZSIsIm9mZmxpbmVfYWNjZXNzIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6Im9wZW5pZCBwcm9maWxlIGVtYWlsIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJ0ZXN0In0.XmzcEhRw6SrQyeSHkS00YD_g2L7OqlamKdniSqbE_Xja-_z0AiZMZp4USAPa2bL-4IMFkWv-vcamwwH_o95zkeKUvhvq7Xu-_VvsVQG-Eosswnba92RcWX2dYgcvo_T3iskQ82NoxXRdH9kyKW7xufy2QH5qrlIz6Aj-KVnh0McT2mWd4SwM-cMii_oMVv6sVasmCzSWMLf_DT9BN5-HwKvBd6RGezDq2gbRJcbnhR7-FqFO2dBrK2Qcn69-ysEpp_dd-HU_b8MK2x9Tb0_OWUPuv2eCWxDQJ32Wi97xcejDdEpz9OBi66rGBjYxFeBiVOAXMMU5tPZiOohXlKKPgA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "client_id",
+							"value": "countries-service",
+							"type": "text"
+						},
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "1a7b2a9d-e368-4d33-89ed-7ceed3617cb7",
+							"type": "text"
+						},
+						{
+							"key": "scope",
+							"value": "openid",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "test",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8180/auth/realms/quarkus/protocol/openid-connect/token",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8180",
+					"path": [
+						"auth",
+						"realms",
+						"quarkus",
+						"protocol",
+						"openid-connect",
+						"token"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
